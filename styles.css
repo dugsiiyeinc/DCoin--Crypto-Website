@@ -85,3 +85,27 @@ header {
 .humburger{
     display: none;
 }
+
+.mobile-menu{
+    display:none ;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #00ff88;
+    color: #333;
+    font-size: 1.25rem;
+   border-radius: 50px;
+    cursor: pointer;
+   
+    &:hover{
+        background-color: white;
+        color: #333;
+       
+    }
+
+}
