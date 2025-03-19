@@ -127,4 +127,20 @@ header {
     i {
         z-index: 11111;
     }
+
+    .humburger{
+        display:flex;
+        justify-content: center;
+       position: absolute;
+       background-color: #00ff88;
+       color: #333;
+       padding: 15px;
+       width: 50px;
+       height: 50px;
+       top: 10%;
+       right: 5%;
+       border-radius: 50%;
+       font-size: 2rem;
+    
+       }
 }
