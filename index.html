@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</head>
-<body>
+  <body>
     <header>
+      <!-- Humburger -->
+      <div class="humburger">
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+        <i class="fa-solid fa-close" data-visible="false"></i>
+      </div>
+      <!--Desktop menu-->
+      <nav class="container desktop-menu">
+        <!-- logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="/log.png" alt="logo" class="logo-pic" />
+            <p class="logo-name">Coin</p>
+          </a>
+        </div>
+        <!-- left menu -->
+        <ul id="left-menu" class="menus-link">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="CryptoCurrencies.html">Crypto Currencies</a></li>
+          <li><a href="CryptoPriceTracker.html">Crypto Price Tracker </a></li>
+        </ul>
+        <!-- right menu -->
+        <!-- FAQs Page -->
+        <ul id="faq-page" class="menus-link">
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
 
-        <!-- Humburger -->
-         <div class="humburger">
-            <i class="fa-solid fa-bars" data-visible="true"></i>
-            <i class="fa-solid fa-close" data-visible="false"></i>
-         </div>
-         <!--Desktop menu--> 
-        <nav class="container desktop-menu">
-            <!-- logo -->
-             <div class="logo">
-             <a href="index.html" >
-                <img src="/log.png" alt="logo"  class="logo-pic">
-                <p class="logo-name">Coin</p>
-             </a>
-             
-            </div>
-             <!-- left menu -->
-              <ul id="left-menu" class="menus-link">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="CryptoCurrencies.html">Crypto Currencies</a></li>
-                <li><a href="CryptoPriceTracker.html">Crypto Price Tracker </a></li>
-              </ul>
-              <!-- right menu -->
-               <!-- FAQs Page -->
-                <ul id="faq-page" class="menus-link">
-                <li><a href="faq.html">FAQ</a></li>
-              </ul>
-        </nav>
-    
+      <!--Mobile menu-->
+      <nav class="mobile-menu" data-visible="false">
+        <div class="navigation">
+          <!-- logo -->
+          <div class="logo">
+            <a href="index.html">
+              <img src="/log.png" alt="logo" class="logo-pic" />
+              <p class="logo-name">Coin</p>
+            </a>
+          </div>
+          <ul id="left-menu" class="menus-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/html/CryptoCurrencies.html">Crypto Currencies</a></li>
+            <li>
+              <a href="/html/CryptoPriceTracker.html">Crypto Price Tracker </a>
+            </li>
+          </ul>
+          <ul id="right-menu" class="menus-link"></ul>
+          <ul id="faq-page" class="menus-link">
+            <li><a href="/html/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-
-
     <script src="script.js"></script>
-    </body>
-    </html>
-    
+  </body>
+</html>
