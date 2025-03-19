@@ -109,3 +109,22 @@ header {
     }
 
 }
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    .desktop-menu{
+        display: none;
+    }
+    header{
+        height: 0;
+    }
+    i {
+        z-index: 11111;
+    }
+}
