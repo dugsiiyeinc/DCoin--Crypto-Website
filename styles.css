@@ -147,12 +147,67 @@ header {
 }
 
 
+.container h1{
+    display: flex;
+    justify-content: center;
+    color:white;
+    background-color: #00ff88;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 20px;
+  
+
+    &:hover{
+        background-color: white;
+        color: #333;
+    }
+}
+#cryptoTable{
+   margin: 20px 0;
+   width: 100%;
+   border-collapse: collapse;
+   box-shadow: 0 4px 12px rgba(193, 16, 16, 0.2);
+}
+
+#cryptoTable th, #cryptoTable td{
+   padding: 15px;
+   border: 1px solid #00ff88 ;
+   color: white;
+}
+
+#cryptoTable th{
+   background-color: #00ff88;
+   color: #000;
+}
+
+#cryptoTable th:hover{
+   background-color: rgba(0,255,136,0.1);
+}
+
+
+select{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+label{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 
 
 
 
 
 
+
+/* Tablet and Mobile phones */
 @media(max-width: 768px){
     .desktop-menu{
         display: none;
