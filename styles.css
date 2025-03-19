@@ -16,7 +16,7 @@ body{
     margin-inline: auto;
     
 }
-
+    /* Header */
 header {
     background-color:#00ff88;
     height: 4.5rem;
@@ -24,7 +24,7 @@ header {
     
     
 }
-
+    /* Desktop Menus */
 .desktop-menu{
     display: flex;
     justify-content: space-between;
@@ -85,7 +85,7 @@ header {
 .humburger{
     display: none;
 }
-
+ /* mobile menu */
 .mobile-menu{
     display:none ;
 }
@@ -108,6 +108,42 @@ header {
        
     }
 
+}
+    /* Hero Section */
+
+.hero{
+    height:calc(100vh - 4.5rem) ;
+    background: linear-gradient(rgba(35, 36, 35, 0.1), rgb(14, 14, 14)), url('https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2021/06/17/151953-crypto-pixa.jpg?itok=I-MXQxfR') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.hero h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+}
+
+.hero p{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.hero .hero-btns{
+    background-color: #02fe88;
+    color: #333;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: white;
+        color: #333;
+    }
 }
 
 
@@ -208,5 +244,6 @@ header {
         font-weight: 700;
         color: #333;
     }
+
 }
 
