@@ -224,6 +224,41 @@ label{
     background-color: rgba(0,255,136,0.1);
  }
 
+ .faq{
+    padding: 40px 20px;
+}
+.faq-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.accordion{
+    min-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.accordion-item{
+    background-color: #00ff88;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accordion-item h3{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.accordion-content{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
 
 
 
