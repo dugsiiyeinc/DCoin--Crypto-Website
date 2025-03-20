@@ -6,8 +6,7 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -95,9 +94,38 @@
           <tbody></tbody>
       </table>
   </div>
-
 </section>
 
+<section class="crypto-curencies">
+  <div class="container">
+    <h1>Crypto Price Tracker</h1>
+    <label for="priceFilter" id="priceFilter"> Filter by price</label>
+    <center>
+    <select  id="price-filter">
+        <option value="all">All</option>
+        <option value="below1">Below 1$</option>
+        <option value="below5">1$ - 5$</option>
+        <option value="below10">5$ - 10$</option>
+        <option value="below100">10$ - 100$</option>
+        <option value="below100">10$ - 100$</option>
+        <option value="below500">100$ - 500$</option>
+        <option value="below1000">500$ - 1k$</option>
+        <option value="above-1k">Above 1k</option>
+    </select>
+    </center>
+    <table id="cryptoTable-2">
+        <thead>
+            <tr>
+              <th>market cap rank</th>
+              <th>Name</th>
+              <th> current price (usd)</th>
+              
+            
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
     <script src="script.js"></script>
   </body>
 </html>
