@@ -360,5 +360,31 @@ footer{
         color: #333;
     }
 
+    .accordion{
+        min-width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    .accordion-item{
+        background-color: #00ff88;
+        padding: 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .accordion-item h3{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    
+    .accordion-content{
+        margin-top: 10px;
+        font-size: 1rem;
+        color: black;
+    }
+    
+
 }
 
