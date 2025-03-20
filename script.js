@@ -49,4 +49,4 @@ function displayData(data){
     
 }
 
-
+fetchCryptoData()
