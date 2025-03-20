@@ -16,15 +16,10 @@ body{
     margin-inline: auto;
     
 }
-    /* Header */
 header {
     background-color:#00ff88;
     height: 4.5rem;
-   
-    
-    
 }
-    /* Desktop Menus */
 .desktop-menu{
     display: flex;
     justify-content: space-between;
@@ -35,7 +30,6 @@ header {
    
     
 }
-
 .menus-link{
     display: flex;
     gap: 20px;
@@ -85,7 +79,6 @@ header {
 .humburger{
     display: none;
 }
- /* mobile menu */
 .mobile-menu{
     display:none ;
 }
@@ -109,7 +102,6 @@ header {
     }
 
 }
-    /* Hero Section */
 
 .hero{
     height:calc(100vh - 4.5rem) ;
@@ -120,7 +112,6 @@ header {
     gap: 1rem;
 
 }
-
 .hero h1{
     font-size: 4rem;
     font-weight: 500;
@@ -146,8 +137,7 @@ header {
     }
 }
 
-
-.container h1{
+ .container h1{
     display: flex;
     justify-content: center;
     color:white;
@@ -168,23 +158,18 @@ header {
    border-collapse: collapse;
    box-shadow: 0 4px 12px rgba(193, 16, 16, 0.2);
 }
-
 #cryptoTable th, #cryptoTable td{
    padding: 15px;
    border: 1px solid #00ff88 ;
    color: white;
 }
-
 #cryptoTable th{
    background-color: #00ff88;
    color: #000;
 }
-
 #cryptoTable th:hover{
    background-color: rgba(0,255,136,0.1);
 }
-
-
 select{
     margin-left: 10px;
     padding: 5px;
@@ -192,7 +177,6 @@ select{
     border-radius: 5px;
     border: none;
 }
-
 label{
     font-size: 1.25rem;
     font-weight: 500;
@@ -201,30 +185,26 @@ label{
     justify-content: center;
 }
 
-
 #cryptoTable-2{
-    margin: 20px 0;
-    width: 100%;
-    border-collapse: collapse;
-    box-shadow: 0 4px 12px rgba(193, 16, 16, 0.2);
- }
- 
- #cryptoTable-2 th, #cryptoTable-2 td{
-    padding: 15px;
-    border: 1px solid #00ff88 ;
-    color: white;
- }
- 
- #cryptoTable-2 th{
-    background-color: #00ff88;
-    color: #000;
- }
- 
- #cryptoTable-2 th:hover{
-    background-color: rgba(0,255,136,0.1);
- }
+   margin: 20px 0;
+   width: 100%;
+   border-collapse: collapse;
+   box-shadow: 0 4px 12px rgba(193, 16, 16, 0.2);
+}
+#cryptoTable-2 th, #cryptoTable-2 td{
+   padding: 15px;
+   border: 1px solid #00ff88 ;
+   color: white;
+}
+#cryptoTable-2 th{
+   background-color: #00ff88;
+   color: #000;
+}
+#cryptoTable-2 th:hover{
+   background-color: rgba(0,255,136,0.1);
+}
 
- .faq{
+.faq{
     padding: 40px 20px;
 }
 .faq-title{
@@ -233,13 +213,11 @@ label{
     margin-bottom: 20px;
     color: white;
 }
-
 .accordion{
     min-width: 600px;
     margin: 0 auto;
     text-align: left;
 }
-
 .accordion-item{
     background-color: #00ff88;
     padding: 20px;
@@ -247,22 +225,27 @@ label{
     border-radius: 5px;
     cursor: pointer;
 }
-
 .accordion-item h3{
     margin: 0;
     font-size: 1.5rem;
 }
-
 .accordion-content{
     margin-top: 10px;
     font-size: 1rem;
     color: #333;
 }
+footer{
+    background-color: #00ff88;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+.footer .up{
+    display: flex;
+    justify-content: space-evenly;
+    
 
-
-
-
-
+}
 
 /* Tablet and Mobile phones */
 @media(max-width: 768px){
