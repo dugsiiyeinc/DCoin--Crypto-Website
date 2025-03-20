@@ -246,6 +246,26 @@ footer{
     
 
 }
+.footer .up li{
+    list-style: none;
+}
+
+.footer .up i{
+    margin-right: 10px;
+    transition: color 0.3s ease;
+    &:hover{
+        color: white;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+       
+
+    }
+}
+
+
+
+
+
 
 /* Tablet and Mobile phones */
 @media(max-width: 768px){
