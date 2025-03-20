@@ -132,4 +132,26 @@ const faqs = [
   ];
 
  
-  
+  faqs.forEach((faq) => {
+    const accordionItem = document.createElement('div');
+    accordionItem.classList.add('accordion-item');
+    accordionItem.innerHTML = `
+    <h3 class="accordion-question">${faq.question}</h3>
+    <p class="accordion-content" style="display:none">${faq.answer}</p>
+    `;
+
+    const accordionQuestion = accordionItem.querySelector('.accordion-question');
+    const accordionContent = accordionItem.querySelector('.accordion-content');
+    accordionQuestion.addEventListener("click", () => {
+        // Close all other open answers before opening the clicked one
+        document.querySelectorAll('.accordion-content').forEach(content => {
+            content.style.display = "none";
+        });
+
+        // Toggle display for the clicked question
+        accordionContent.style.display = "block";
+    });
+
+    accordion.appendChild(accordionItem);
+});
+
