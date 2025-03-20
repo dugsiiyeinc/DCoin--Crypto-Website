@@ -4,6 +4,7 @@ const icons = document.querySelectorAll('i');
 const tableBody = document.querySelector('#cryptoTable tbody');
 const cryptoTable_2 = document.querySelector('#cryptoTable-2 tbody');
 const priceFilter = document.querySelector('#price-filter');
+const accordion = document.querySelector('.accordion')
 
 humbergur.addEventListener("click", function (event){
     const isVisible = mobileMenu.getAttribute('data-visible');
@@ -92,3 +93,43 @@ function displayData_2(data){
 });
 
 fetchCryptoData()
+
+
+// FAQs Section
+
+const faqs = [
+    {
+      question: "What is cryptocurrency?",
+      answer:
+        "Cryptocurrency is a digital or virtual currency that uses cryptography for security. It operates on decentralized networks, typically based on blockchain technology.",
+    },
+    {
+      question: "How does cryptocurrency work?",
+      answer:
+        "Cryptocurrencies use a distributed ledger called blockchain to record transactions. Transactions are verified by network participants using cryptographic techniques, ensuring security and transparency.",
+    },
+    {
+      question: "What is blockchain?",
+      answer:
+        "Blockchain is a decentralized and immutable ledger that records transactions across multiple computers. It ensures security, transparency, and prevents tampering",
+    },
+    {
+      question: "What is Bitcoin?",
+      answer:
+        "Bitcoin is the first and most well-known cryptocurrency, created in 2009 by an anonymous person or group known as Satoshi Nakamoto. It operates on a decentralized network without a central authority.",
+    },
+    {
+        question: "What are altcoins?",
+        answer:
+          "Altcoins (alternative coins) are any cryptocurrencies other than Bitcoin, such as Ethereum, Ripple, Litecoin, and Cardano. They may have different functionalities and use cases.",
+      },
+
+      {
+        question: "Is cryptocurrency legal?",
+        answer:
+          "Cryptocurrency legality varies by country. Some nations fully support it, while others impose restrictions or outright bans. Always check your local regulations.",
+      },
+  ];
+
+ 
+  
