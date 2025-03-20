@@ -202,6 +202,28 @@ label{
 }
 
 
+#cryptoTable-2{
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(193, 16, 16, 0.2);
+ }
+ 
+ #cryptoTable-2 th, #cryptoTable-2 td{
+    padding: 15px;
+    border: 1px solid #00ff88 ;
+    color: white;
+ }
+ 
+ #cryptoTable-2 th{
+    background-color: #00ff88;
+    color: #000;
+ }
+ 
+ #cryptoTable-2 th:hover{
+    background-color: rgba(0,255,136,0.1);
+ }
+
 
 
 
