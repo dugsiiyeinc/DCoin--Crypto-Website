@@ -152,24 +152,7 @@ header {
         color: #333;
     }
 }
-#cryptoTable{
-   margin: 20px 0;
-   width: 100%;
-   border-collapse: collapse;
-   box-shadow: 0 4px 12px rgba(193, 16, 16, 0.2);
-}
-#cryptoTable th, #cryptoTable td{
-   padding: 15px;
-   border: 1px solid #00ff88 ;
-   color: white;
-}
-#cryptoTable th{
-   background-color: #00ff88;
-   color: #000;
-}
-#cryptoTable th:hover{
-   background-color: rgba(0,255,136,0.1);
-}
+
 select{
     margin-left: 10px;
     padding: 5px;
@@ -235,6 +218,7 @@ label{
     color: #333;
 }
 footer{
+    display: ;
     background-color: #00ff88;
     padding: 20px;
     text-align: center;
@@ -337,13 +321,7 @@ footer{
     
        }
     
-       .btns{
-        width: 50vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 5px;
-       }
+       
     
        .logo{
        position: absolute;

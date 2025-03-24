@@ -1,7 +1,6 @@
 const humbergur = document.querySelector('.humburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const icons = document.querySelectorAll('i');
-const tableBody = document.querySelector('#cryptoTable tbody');
 const cryptoTable_2 = document.querySelector('#cryptoTable-2 tbody');
 const priceFilter = document.querySelector('#price-filter');
 const accordion = document.querySelector('.accordion')
@@ -22,35 +21,18 @@ humbergur.addEventListener("click", function (event){
     }
  })
 
- //  Crypto currenciesn section
+ 
 async function fetchCryptoData(){
     const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd');
     const data = await response.json();
     allData = data;
     console.log(data);
-    displayData(data);
     displayData_2(data)
     
     
 }
 
-function displayData(data){
-    tableBody.innerHTML ='';
-    data.forEach(coin =>{
-        const row = document.createElement('tr');
-        row.innerHTML = `
-         <td>${coin.market_cap_rank}</td>
-        <td>${coin.name}</td>
-        <td>${coin.current_price}</td>
-       
 
-            `;
-        tableBody.appendChild(row);
-    });
-
-
-    
-}
 
 // Crypto Price Tracker
 function displayData_2(data){
@@ -69,7 +51,8 @@ function displayData_2(data){
 
 
     
-}priceFilter.addEventListener('change', () => {
+}
+priceFilter.addEventListener('change', () => {
     let filterData;
     
     if (priceFilter.value === 'all') {

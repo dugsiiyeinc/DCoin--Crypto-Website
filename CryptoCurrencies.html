@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Humburger -->
+      <div class="humburger">
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+        <i class="fa-solid fa-close" data-visible="false"></i>
+      </div>
+      <!--Desktop menu-->
+      <nav class="container desktop-menu">
+        <!-- logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="log.png" alt="logo" class="logo-pic" />
+            <p class="logo-name">Coin</p>
+          </a>
+        </div>
+        <!-- left menu -->
+        <ul id="left-menu" class="menus-link">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="CryptoCurrencies.html">Crypto Currencies</a></li>
+        </ul>
+        <!-- right menu -->
+        <!-- FAQs Page -->
+        <ul id="faq-page" class="menus-link">
+        </ul>
+      </nav>
+
+      <!--Mobile menu-->
+      <nav class="mobile-menu" data-visible="false">
+        <div class="navigation">
+          <!-- logo -->
+          <div class="logo">
+            <a href="index.html">
+              <img src="/log.png" alt="logo" class="logo-pic" />
+              <p class="logo-name">Coin</p>
+            </a>
+          </div>
+          <ul id="left-menu" class="menus-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CryptoCurrencies.html">Crypto Currencies</a></li>
+          </ul>
+          <ul id="right-menu" class="menus-link"></ul>
+          <ul id="faq-page" class="menus-link">
+          </ul>
+        </div>
+      </nav>
+    </header>
+  
+    <section class="crypto-curencies">
+      <div class="container">
+        <h1>Top 100 Crypto Currencies</h1>
+        <label for="priceFilter" id="priceFilter"> Filter by price</label>
+        <center>
+        <select  id="price-filter">
+            <option value="all">All</option>
+            <option value="below1">Below 1$</option>
+            <option value="below5">1$ - 5$</option>
+            <option value="below10">5$ - 10$</option>
+            <option value="below100">10$ - 100$</option>
+            <option value="below100">10$ - 100$</option>
+            <option value="below500">100$ - 500$</option>
+            <option value="below1000">500$ - 1k$</option>
+            <option value="above-1k">Above 1k</option>
+        </select>
+        </center>
+        <table id="cryptoTable-2">
+            <thead>
+                <tr>
+                  <th>market cap rank</th>
+                  <th>Name</th>
+                  <th> current price (usd)</th>
+                  
+                
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    </section>
+    <!-- FAQ Section  -->
+<section class="faq">
+  <div class="container">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <div class="accordion">
+    <!-- JavaScript will inject the FAQ items here -->
+  </div>
+  </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="up">
+            <div class="one">
+              <h2>OUR COMPANY</h2>
+
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Service</li>
+              </ul>
+            </div>
+            <div class="two">
+              <h2>HELP & SUPPORT</h2>
+              <ul>
+                <li>FAQ</li>
+                <li>Terms & Services</li>
+                <li>Coming Soon</li>
+              </ul>
+            </div>
+            <div class="three">
+              <h2>CONTACT US</h2>
+              <ul>
+                <li><i class="fa-solid fa-phone"></i>+201508939154</li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>masudmohamed2024@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
